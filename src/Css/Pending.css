@@ -1,0 +1,9 @@
+.pend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #947054;
+  --black-color: #000;
+  --normal-font-color: #7d7d7d;
+  --header-font-color: #323232;
+  --white-color: #ffffff;
+  --transition: all .3s ease-in;
+  --contract-bg: #f1f6f8;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
+}

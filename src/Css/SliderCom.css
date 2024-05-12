@@ -1,0 +1,29 @@
+.slider-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.slider-container [class^="slider--"] {
+    width: 100%;
+    height: 100vh;
+    transition: var(--transition);
+}
+
+.slider-container [class^="slider--"] img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 600px) {
+    .slider-container [class^="slider--"] {
+        height: 65vh;
+    }
+
+    .slider-container {
+        height: 65vh;
+    }
+}

@@ -1,0 +1,126 @@
+.footer-container {
+    background-image: url(../Images/footer.jpg);
+    height: 100% !important;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: -1000;
+}
+
+.footer-container .foot {
+    background: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: auto;
+    padding: 6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.footer-container .foot .footer-about {
+    width: 45%;
+    height: auto;
+}
+
+.footer-container .foot .footer-about h2,
+.footer-container .foot .footer-hours h2 {
+    text-transform: uppercase;
+    color: var(--white-color);
+    text-decoration: underline 3px var(--bg-color);
+    font-weight: 400;
+    margin-bottom: 3em;
+}
+
+.footer-container .foot .footer-about .img {
+    width: 50%;
+    height: 30vh;
+}
+
+.footer-container .foot .footer-about .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-container .foot .footer-about .name h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: var(--bg-color);
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.footer-container .foot .footer-about .name p {
+    color: var(--normal-font-color);
+    line-height: 30px;
+}
+
+.footer-container .foot .footer-hours {
+    width: 45%;
+    height: auto;
+}
+
+.footer-container .foot .footer-hours .day h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--normal-font-color);
+    border-bottom: 1px solid var(--normal-font-color);
+    padding: 1em 0;
+}
+
+.footer-container .foot .footer-hours .phone {
+    padding: 1.5em 0;
+}
+
+.footer-container .foot .footer-hours .phone p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    color: var(--white-color);
+}
+
+.footer-container .foot .footer-hours .phone p span {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-container .foot {
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container .foot {
+        padding: 1.5em;
+    }
+
+    .footer-container .foot .footer-about h2,
+    .footer-container .foot .footer-hours h2 {
+        margin-bottom: 2em;
+    }
+
+    .footer-container .foot {
+        flex-wrap: wrap;
+    }
+    .footer-container .foot .footer-about,
+    .footer-container .foot .footer-hours {
+        width: 100%;
+    }
+
+    .footer-container .foot .footer-hours{
+        margin-top: 40px;
+    }
+
+    .footer-container {
+        background-size: 180% 100%;
+    }
+    
+}

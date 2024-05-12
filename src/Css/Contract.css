@@ -1,0 +1,86 @@
+.contract-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--contract-bg);
+    padding: 4em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contract-container .contract-one {
+    width: 45%;
+    height: auto;
+    transition: var(--transition);
+}
+
+.contract-container .contract-one .name {
+    margin-bottom: 50px;
+}
+
+.contract-container .contract-one .name h1 {
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.contract-container .contract-one .name h1::first-letter {
+    font-size: 40px;
+}
+
+.contract-container .contract-one .p {
+    color: var(--normal-font-color);
+    margin-bottom: 30px;
+    text-wrap: balance;
+}
+
+.contract-container .contract-one .call {
+    display: flex;
+    flex-direction: column;
+    color: var(--header-font-color);
+}
+
+.contract-container .contract-one .call p {
+    margin: 7px 0;
+}
+
+.contract-container .contract-one .sign {
+    margin: 18px 0;
+}
+
+.contract-container .contract-two {
+    width: 50%;
+    height: 90vh;
+    transition: var(--transition);
+}
+
+.contract-container .contract-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+    .contract-container {
+        flex-wrap: wrap;
+    }
+
+    .contract-container .contract-one,
+    .contract-container .contract-two {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contract-container {
+       padding: 0;
+    }
+
+    .contract-container .contract-one {
+        padding: 5em 1.5em 1em;
+    }
+
+    .contract-container .contract-two {
+        height: 50vh;
+    }
+    
+}
